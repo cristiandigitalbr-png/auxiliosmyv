@@ -140,13 +140,14 @@
   }
   .hero-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:center;}
   .btn-primary{
-    background:var(--yellow);color:#FFFFFF;
+    background:var(--panel);color:#FFFFFF;
+    border:1px solid rgba(255,255,255,0.14);
     font-weight:800;font-size:1.02rem;
     padding:17px 30px;border-radius:3px;
     display:inline-flex;align-items:center;gap:10px;
-    transition:background .2s, transform .2s;
+    transition:background .2s, transform .2s, border-color .2s;
   }
-  .btn-primary:hover{background:var(--yellow-deep);transform:translateY(-2px);}
+  .btn-primary:hover{background:#5C1729;border-color:var(--yellow);transform:translateY(-2px);}
   .btn-ghost{
     border:1.5px solid rgba(237,234,226,0.3);
     color:var(--ivory);
